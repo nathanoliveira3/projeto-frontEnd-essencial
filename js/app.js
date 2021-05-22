@@ -1,7 +1,6 @@
 const produto = document.querySelector('#produto');
 const quantidade = document.querySelector('#quantidade');
 const valor = document.querySelector('#valor');
-const tipo = document.querySelector('option:checked');
 const form = document.querySelector('form');
 const tBody = document.querySelector('tbody');
 const success = document.querySelector('#success');
@@ -14,6 +13,10 @@ let soma = 0;
 
 form.addEventListener('submit', e => {
     e.preventDefault();    
+
+    const tipo = document.querySelector('option:checked');
+
+    let escolha = tipo.text;
 
     let tr = document.createElement('tr');
     let tdProduto = document.createElement('td');
@@ -29,7 +32,7 @@ form.addEventListener('submit', e => {
     tdProduto.textContent = produto.value;
     tdQuantidade.textContent = quantidade.value;
     tdValor.textContent = valor.value;
-    tdTipo.textContent = tipo.innerText;
+    tdTipo.textContent = escolha.innerText;
     tdTotal.textContent = (valor.value) * (quantidade.value); 
 
     soma += parseFloat(valor.value * quantidade.value);
@@ -42,7 +45,8 @@ form.addEventListener('submit', e => {
     btnExcluir.classList.add('btn');
 
     btnExcluir.addEventListener('click', () => {
-        console.log(soma -= parseFloat(valor.value * quantidade.value));
+
+        soma -= parseFloat(tdValor.innerText * tdQuantidade.innerText);
         tr.remove();
         valorTotal.textContent = `Valor Total: ${soma}.`;
 
@@ -59,6 +63,8 @@ form.addEventListener('submit', e => {
 
     })
     
+    tdTipo.innerText = escolha;
+
     tr.append(tdProduto);
     tr.append(tdTipo);
     tr.append(tdQuantidade);
@@ -77,6 +83,10 @@ form.addEventListener('submit', e => {
     valorTotal.textContent = `Valor Total: ${soma}.`;
 
     excluir.removeAttribute('disabled','disabled');
+
+    produto.value = '';
+    quantidade.value = '';
+    valor.value = '';
 
 })
 
