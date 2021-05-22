@@ -4,11 +4,13 @@ const valor = document.querySelector('#valor');
 const tipo = document.querySelector('option:checked');
 const form = document.querySelector('form');
 const tBody = document.querySelector('tbody');
+const success = document.querySelector('#success');
+const alert1 = document.querySelector('#alert1');
+const alert2 = document.querySelector('#alert2');
 
 const valorTotal = document.querySelector('#valor-total');
 
 let soma = 0;
-
 
 form.addEventListener('submit', e => {
     e.preventDefault();    
@@ -43,6 +45,11 @@ form.addEventListener('submit', e => {
         console.log(soma -= parseFloat(valor.value * quantidade.value));
         tr.remove();
         valorTotal.textContent = `Valor Total: ${soma}.`;
+
+        alert1.classList.remove('d-none');
+
+        setTimeout( () => alert1.classList.add('d-none'), 2000);
+
         if(soma === 0){
             excluir.setAttribute('disabled', 'disabled');
             valorTotal.textContent = '';
@@ -63,6 +70,10 @@ form.addEventListener('submit', e => {
 
     tBody.append(tr);
 
+    success.classList.remove('d-none');
+
+    setTimeout( () => success.classList.add('d-none'), 2000);
+
     valorTotal.textContent = `Valor Total: ${soma}.`;
 
     excluir.removeAttribute('disabled','disabled');
@@ -77,7 +88,13 @@ excluir.addEventListener('click', () => {
         e.remove(); 
         soma -= parseFloat(valor.value * quantidade.value);       
     });
+
     valorTotal.textContent = '';
+
+    alert2.classList.remove('d-none');
+
+    setTimeout( () => alert2.classList.add('d-none'), 2000);
+
     excluir.setAttribute('disabled', 'disabled');
 })
 

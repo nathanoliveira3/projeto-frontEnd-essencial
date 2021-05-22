@@ -19,6 +19,6 @@
     height: 100vh;
     z-index: 1;
     overflow: visible;
-    background: url('/img/E-COMMERCE.gif') no-repeat center center;
+    background: url('../img/E-COMMERCE.gif') no-repeat center center;
     background-color: white;
 }
