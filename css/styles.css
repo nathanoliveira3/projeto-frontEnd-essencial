@@ -1,0 +1,14 @@
+#container-principal, #container-depoimentos, footer, a{
+    background-color: #212529;
+    color: white;
+}
+
+.img-carousel{
+    width: 250px;
+    border: 2px solid white;    
+}
+
+.map {
+    height: 400px;
+    width: 100%;
+  }

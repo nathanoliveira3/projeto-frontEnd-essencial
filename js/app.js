@@ -11,7 +11,7 @@ let soma = 0;
 
 
 form.addEventListener('submit', e => {
-    e.preventDefault();
+    e.preventDefault();    
 
     let tr = document.createElement('tr');
     let tdProduto = document.createElement('td');
@@ -20,10 +20,7 @@ form.addEventListener('submit', e => {
     let tdValor = document.createElement('td');
     let tdTotal = document.createElement('td');
     let tdBotao = document.createElement('td');   
-    
-    
-
-    
+   
     tr.classList.add('text-center','align-middle');
     tdTotal.classList.add('valor-item');
 
@@ -69,8 +66,6 @@ form.addEventListener('submit', e => {
     valorTotal.textContent = `Valor Total: ${soma}.`;
 
     excluir.removeAttribute('disabled','disabled');
-    
-
 
 })
 
@@ -85,15 +80,5 @@ excluir.addEventListener('click', () => {
     valorTotal.textContent = '';
     excluir.setAttribute('disabled', 'disabled');
 })
-
-/*const somaTotal = () => {
-    const valores = document.querySelectorAll('.valor-item');
-    let soma = document.createElement('td');
-    console.log(valores);
-    let acc = 0;
-    soma.textContent = valores.forEach(e => console.log(e.value))
-    //console.log(acc);
-    //tfoot.append(acc);    
-}*/
 
 
