@@ -2,7 +2,7 @@ const cep = document.querySelector('#cep');
 const cidade  = document.querySelector('#cidade')
 const uf  = document.querySelector('#uf')
 const rua  = document.querySelector('#rua')
-const numero  = document.querySelector('#numero')
+const bairro  = document.querySelector('#bairro')
 
 
 cep.addEventListener('focusout', () => {
@@ -11,9 +11,10 @@ cep.addEventListener('focusout', () => {
     fetch(url)
     .then(response => response.json())
     .then(endereco => {
+        console.log(endereco)
         cidade.value = endereco.localidade;
         uf.value = endereco.uf;
         rua.value = endereco.logradouro;
-        
-    })
+        bairro.value = endereco.bairro;        
+    })    
 })

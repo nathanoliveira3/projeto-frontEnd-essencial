@@ -101,6 +101,7 @@ excluir.addEventListener('click', () => {
     });
 
     valorTotal.textContent = '';
+    soma = 0;
 
     alert2.classList.remove('d-none');
 

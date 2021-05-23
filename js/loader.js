@@ -10,6 +10,7 @@ function loadNow(opacity){
         }, 10);
     }
 }
+
 function displayContent(){
     loader.style.display = 'none';
     document.getElementById('content').style.display = 'block';

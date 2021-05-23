@@ -45,7 +45,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-bold" href="contato.html">Contato</a>
-                        </li>                        
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link fw-bold" href="login.html">Login</a>
                         </li>
@@ -54,91 +54,82 @@
             </div>
         </nav>
     </header>
-
-    <div class="container">
-
-        <div class="row">
-            <h2 class="text-center mt-5">CADASTRO</h2>
-            <div class="col-lg-6 col-md-10 mx-auto my-3">
-                <form>
-                    <div class="mb-3">
-                        <label class="form-label" for="fname">Nome</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="flastname">Sobrenome</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="femail">E-mail</label>
-                        <input type="email" class="form-control" placeholder="exemplo@serratecmkt.com.br">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="femail">Confirme o e-mail</label>
-                        <input type="email" class="form-control" placeholder="exemplo@serratecmkt.com.br">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="senha">Senha</label>
-                        <input type="password" class="form-control" placeholder="Insira sua senha...">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="senha">Confirme a senha</label>
-                        <input type="password" class="form-control" placeholder="Insira sua senha...">
-                    </div>
-
-                    <h3 class="text-center mt-5">ENDEREÇO</h2>
-
-                        <div class="row">
-                            <div class="mb-3 col-4">
-                                <label class='form-label' for="">CEP</label>
-                                <input id="cep" type="number" min='1' class="form-control">
-                            </div>
-                            <div class="mb-3 col-6">
-                                <label class='form-label' for="">Cidade</label>
-                                <input id="cidade" type="text" class="form-control">
-                            </div>
-                            <div class="mb-3 col-2">
-                                <label class='form-label' for="">UF</label>
-                                <input id="uf" type="text" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="row">
-
-                            <div class="mb-3 col-9">
-                                <label class="form-label" for="rua">Rua</label>
-                                <input id="rua" type="text" class="form-control" placeholder="">
-                            </div>
-                            <div class="mb-3 col-3">
-                                <label class="form-label" for="rua">Número</label>
-                                <input id="numero" type="number" min='1' class="form-control" placeholder="">
-                            </div>
-                        </div>
-                        <div class="row">
-
-                            <div class="mb-3">
-                                <label for="" class="form-label">Complemento</label>
-                                <input type="text" class="form-control" placeholder="Ex: Fundos, apartamento...">
-
-                            </div>
-
-
-                        </div>
-
-
-
+    <main>
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center mt-5">CADASTRO</h2>
+                <div class="col-lg-6 col-md-10 mx-auto my-3">
+                    <form>
                         <div class="mb-3">
-                            <button class="btn btn-dark fw-bold d-grid gap-2 col-6 mx-auto mt-3" type="submit"
-                                value="Enviar">Cadastrar</button>
+                            <label class="form-label" for="fname">Nome</label>
+                            <input type="text" class="form-control">
                         </div>
-                </form>
+                        <div class="mb-3">
+                            <label class="form-label" for="flastname">Sobrenome</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="femail">E-mail</label>
+                            <input type="email" class="form-control" placeholder="exemplo@serratecmkt.com.br">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="femail">Confirme o e-mail</label>
+                            <input type="email" class="form-control" placeholder="exemplo@serratecmkt.com.br">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="senha">Senha</label>
+                            <input type="password" class="form-control" placeholder="Insira sua senha...">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="senha">Confirme a senha</label>
+                            <input type="password" class="form-control" placeholder="Insira sua senha...">
+                        </div>
+
+                        <h3 class="text-center mt-5">ENDEREÇO</h2>
+
+                            <div class="row">
+                                <div class="mb-3 col-4">
+                                    <label class='form-label' for="">CEP</label>
+                                    <input id="cep" type="number" min='1' class="form-control">
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label class='form-label' for="">Cidade</label>
+                                    <input id="cidade" type="text" class="form-control">
+                                </div>
+                                <div class="mb-3 col-2">
+                                    <label class='form-label' for="">UF</label>
+                                    <input id="uf" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="mb-3 col-8">
+                                    <label class="form-label" for="rua">Rua</label>
+                                    <input id="rua" type="text" class="form-control" placeholder="">
+                                </div>
+                                <div class="mb-3 col-4">
+                                    <label class="form-label" for="bairro">Bairro</label>
+                                    <input id="bairro" type="text" min='1' class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="mb-3 col-9">
+                                    <label for="complemento" class="form-label">Complemento</label>
+                                    <input id="complemento" type="text" class="form-control" placeholder="Ex: Fundos, apartamento...">
+                                </div>
+                                <div class="mb-3 col-3">
+                                    <label class="form-label" for="numero">Número</label>
+                                    <input id="numero" type="number" min='1' class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn btn-dark fw-bold d-grid gap-2 col-6 mx-auto mt-3" type="submit"
+                                    value="Enviar">Cadastrar</button>
+                            </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-
-
-
-
+    </main>
     <footer class="text-center p-3 mt-5">
         <div class="row">
             <div class="col-12">
