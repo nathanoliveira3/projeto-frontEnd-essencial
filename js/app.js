@@ -45,12 +45,9 @@ form.addEventListener('submit', e => {
     btnExcluir.classList.add('btn');
 
     btnExcluir.addEventListener('click', () => {
-<<<<<<< HEAD
-        soma -= parseFloat(valor.value * quantidade.value);        
-=======
 
         soma -= parseFloat(tdValor.innerText * tdQuantidade.innerText);
->>>>>>> de7ca5e29805fed0c5adaea69f9ca885d56daaa0
+
         tr.remove();
         valorTotal.textContent = `Valor Total: ${soma}.`;
 
