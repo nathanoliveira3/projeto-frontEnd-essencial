@@ -42,7 +42,7 @@ form.addEventListener('submit', e => {
     btnExcluir.classList.add('btn');
 
     btnExcluir.addEventListener('click', () => {
-        console.log(soma -= parseFloat(valor.value * quantidade.value));
+        soma -= parseFloat(valor.value * quantidade.value);        
         tr.remove();
         valorTotal.textContent = `Valor Total: ${soma}.`;
 
