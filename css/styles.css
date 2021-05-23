@@ -1,6 +1,6 @@
 #container-principal, #container-depoimentos, footer, a{
     background-color: #212529;
-    color: white;
+    color: white !important;
 }
 
 .img-carousel{
