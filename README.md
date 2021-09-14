@@ -12,8 +12,10 @@ Repositório para o Trabalho Final da disciplina FrontEnd Essencial onde foi des
 ## ⚙️ Funcionalidades
 
 <h1 align="center">
-    <img src="./assets/img1.png" />
+    
 </h1>
+
+<img src="./assets/img1.png" />
 
 
 
