@@ -14,6 +14,16 @@ Repositório para o Trabalho Final da disciplina FrontEnd Essencial onde foi des
 <h1 align="center">
     <img src="./assets/img1.png" />
 </h1>
+<h1 align="center">
+    <img src="./assets/img2.png" />
+</h1>
+<h1 align="center">
+    <img src="./assets/img3.png" />
+</h1>
+<h1 align="center">
+    <img src="./assets/mobile1.png" />
+    <img src="./assets/mobile2.png" />
+</h1>
 
 ## 🚀 Como executar o projeto
 
